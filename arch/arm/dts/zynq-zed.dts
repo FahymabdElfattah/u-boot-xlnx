@@ -18,7 +18,7 @@
 		mmc0 = &sdhci0;
 	};
 
-	memory {
+	memory@0 {
 		device_type = "memory";
 		reg = <0x0 0x20000000>;
 	};
@@ -37,7 +37,7 @@
 	};
 
 	// --- 
-	fpga-axi@0 {
+	fpga-axi {
 		compatible = "simple-bus";
 		#address-cells = <0x01>;
 		#size-cells = <0x01>;
